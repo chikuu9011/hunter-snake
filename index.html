@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="index.js" defer></script>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <h2>hunter snake</h2> 
+        <div class="game">
+            <div class="game-details">
+                <h3>
+                    score <span class="score">00</span>
+                </h3>
+            </div>
+            <div class="game-space">
+
+            </div>
+        </div>
+        <div id="quizModal" style="display:none;">
+            <div class="quiz-content">
+                <h2>Quiz Question</h2>
+                <form id="quizForm">
+                    <p>What is the capital of France?</p>
+                    <div>
+                        <input type="radio" id="paris" name="capital" value="Paris">
+                        <label for="paris">Paris</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="rome" name="capital" value="Rome">
+                        <label for="rome">Rome</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="berlin" name="capital" value="Berlin">
+                        <label for="berlin">Berlin</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="madrid" name="capital" value="Madrid">
+                        <label for="madrid">Madrid</label>
+                    </div>
+                    <button type="submit">Submit Answer</button>
+                </form>
+            </div>
+        </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+</html>

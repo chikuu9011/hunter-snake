@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #E3F2FD;
+}
+h2{
+  text-transform: uppercase;
+  font-size: 36px;
+    font-family: 'Arial'; /* Specify the font family */
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Define the multicolor gradient background */
+    -webkit-background-clip: text; /* Apply the background as text color (for WebKit browsers) */
+    -webkit-text-fill-color: transparent; /* Hide the actual text color (for WebKit browsers) */
+    background-clip: text; /* Apply the background as text color */
+    color: transparent; /* Hide the actual text color */
+
+  padding: 10px;
+  margin: 20px 0;
+}
+.game{
+    width: 65vmin;
+    height: 70vmin;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    background: #293447;
+    box-shadow: 0 20px 40px rgba(52, 87, 220, 0.2);
+}
+.game-details{
+    color: #B8C6DC;
+display: flex;
+justify-content: end;
+}
+
+.game-details h3{
+    padding: 5px 10px;
+    font-size: 1rem;
+
+}
+
+.game-space{
+    height: 100%;
+    width: 100%;
+    display: grid;
+     grid-template: repeat(30, 1fr)/ repeat(30, 1fr);
+    background-color: #212837;
+}
+
+.game-space .food {
+    background-color: red;
+}
+.game-space .head {
+    background-color: aqua;
+}
+@media screen and (max-width: 800px) {
+    .wrapper {
+      width: 90vmin;
+      height: 115vmin;
+    }
+    .game-details {
+      font-size: 1rem;
+      padding: 15px 27px;
+    }
+    .controls {
+      display: flex;
+    }
+    .controls i {
+      padding: 15px 0;
+      font-size: 1rem;
+    }
+  }
+  #quizModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.quiz-content h2 {
+    color: #333;
+    text-align: center;
+}
+
+#quizForm p {
+    font-size: 16px;
+    color: #666;
+}
+
+#quizForm div {
+    margin-bottom: 10px;
+}
+
+#quizForm label {
+    margin-left: 8px;
+}
+
+#quizForm button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#quizForm button:hover {
+    background-color: #0056b3;
+}
+body {
+    background-image: url('cute-snake-game.jpg');
+    background-size: cover; /* Adjust background size */
+    background-position: center; /* Adjust background position */
+    background-repeat: no-repeat; /* Disable background repeat */
+}
